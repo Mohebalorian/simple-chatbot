@@ -7,12 +7,14 @@ int main(void) {
     char message [200];
     
     printf("Bot: Hi I am a chatbot. How can I help you?\n");
-
+    printf("You: ");
      
 
-     while(1) {
-        printf("You: ");
-        if(fgets(message, 200, stdin)==NULL);
+ while(1) {
+      
+   if(fgets(message, 200, stdin)==NULL{
+       break;
+   }
 
      if(strstr(message, "bye") != NULL) {
        printf("Bot: Goodbye! Have a great day!\n");
