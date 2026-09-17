@@ -12,7 +12,7 @@ int main(void) {
 
      while(1) {
         printf("You: ");
-        fgets(message, 200, stdin);
+        if(fgets(message, 200, stdin)==NULL);
 
      if(strstr(message, "bye") != NULL) {
        printf("Bot: Goodbye! Have a great day!\n");
